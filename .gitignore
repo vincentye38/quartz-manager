@@ -1,0 +1,8 @@
+/gwt-unitCache
+.DS_Store
+.classpath
+.gwt/
+.metadata/
+.project
+.settings/
+.springBeans
