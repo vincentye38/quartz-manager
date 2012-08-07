@@ -1,2 +1,0 @@
-serviceClass: com.nextag.quartz.client.GWTQuartzScheduler
-path: 9769866E684138D39E42A35A66F99AB8.gwt.rpc
