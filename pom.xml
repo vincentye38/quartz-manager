@@ -108,4 +108,30 @@
 			<url>http://crepo.corp.nextag.com/repo/components2</url>
 		</repository>
 	</repositories>
+	<scm>                 
+		<connection>scm:git:git://git.corp.nextag.com/services/quartz-manager.git</connection>
+        <developerConnection>scm:git:ssh://kato@gerrit.corp.nextag.com:29418/services/quartz-manager.git</developerConnection>
+        <url>http://git@git.corp.nextag.com/services/quartz-manager.git</url>
+        <tag>QuartzManager-0.0.1</tag>
+	</scm>
+	<profiles>
+        <!-- For Jenkin Builds, "mvn clean verify -Denv=jenkins" will be used to
+                 activate a profile with certain property overrides from the default. -->
+         <profile>
+               <id>env-jenkins</id>
+               <activation>
+                        <property>
+                                <name>env</name>
+                                <value>jenkins</value>
+                        </property>
+                </activation>
+     
+                <distributionManagement>
+                        <repository>
+                                <id>nextag-writable</id>
+                                <url>scp://crepodata.corp.nextag.com/data2/repo/components2</url>
+                        </repository>
+                </distributionManagement>
+        </profile>
+ 	</profiles>
 </project>
