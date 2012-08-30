@@ -1,4 +1,7 @@
-package com.nextag.quartz.client.editors;
+package org.quartz.GWTQuartzManager.client.editors;
+
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
+import org.quartz.GWTQuartzManager.share.Pair;
 
 import com.google.gwt.cell.client.EditTextCell;
 import com.google.gwt.cell.client.FieldUpdater;
@@ -18,8 +21,6 @@ import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.Editor.Path;
 import com.google.gwt.editor.client.adapters.HasDataEditor;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.nextag.quartz.share.GWTJobDetail;
-import com.nextag.quartz.share.Pair;
 
 public class GWTJobDetailEditor extends Composite implements Editor<GWTJobDetail>{
 	

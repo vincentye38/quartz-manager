@@ -12,13 +12,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.nextag.quartz.client;
+package org.quartz.GWTQuartzManager.client;
 
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import org.quartz.GWTQuartzManager.client.events.DeleteJobEvent;
+import org.quartz.GWTQuartzManager.client.events.EditJobEvent;
+import org.quartz.GWTQuartzManager.client.events.EditTriggerEvent;
+import org.quartz.GWTQuartzManager.client.events.ToggleTriggerStateEvent;
+import org.quartz.GWTQuartzManager.client.events.TriggerJobEvent;
+import org.quartz.GWTQuartzManager.client.widgets.JobsTable;
+import org.quartz.GWTQuartzManager.client.widgets.SchedulerAdminButtonsWidget;
+import org.quartz.GWTQuartzManager.client.widgets.TriggersTable;
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
+import org.quartz.GWTQuartzManager.share.GWTTrigger;
 
 import com.google.gwt.cell.client.NumberCell;
 import com.google.gwt.core.client.EntryPoint;
@@ -45,17 +57,6 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TabPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.view.client.ListDataProvider;
-import com.nextag.quartz.client.events.DeleteJobEvent;
-import com.nextag.quartz.client.events.EditJobEvent;
-import com.nextag.quartz.client.events.EditTriggerEvent;
-import com.nextag.quartz.client.events.ToggleTriggerStateEvent;
-import com.nextag.quartz.client.events.TriggerJobEvent;
-import com.nextag.quartz.client.widgets.JobsTable;
-import com.nextag.quartz.client.widgets.SchedulerAdminButtonsWidget;
-import com.nextag.quartz.client.widgets.TriggersTable;
-import com.nextag.quartz.share.GWTCronTrigger;
-import com.nextag.quartz.share.GWTJobDetail;
-import com.nextag.quartz.share.GWTTrigger;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.

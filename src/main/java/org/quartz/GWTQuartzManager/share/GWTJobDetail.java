@@ -1,4 +1,4 @@
-package com.nextag.quartz.share;
+package org.quartz.GWTQuartzManager.share;
 
 import java.io.Serializable;
 import java.util.ArrayList;

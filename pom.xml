@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>nextag.com</groupId>
-  <artifactId>QuartzManager</artifactId>
-  <version>0.0.9-SNAPSHOT</version>
+  <groupId>org.quartz</groupId>
+  <artifactId>GWTQuartzManager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
   <properties>
@@ -46,6 +46,7 @@
     	<groupId>com.google.gwt</groupId>
     	<artifactId>gwt-dev</artifactId>
     	<version>2.5.0-rc1</version>
+    	<scope>compile</scope>
     </dependency>
     <dependency>
     	<groupId>org.quartz-scheduler</groupId>
@@ -62,18 +63,6 @@
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-context</artifactId>
     	<version>3.1.2.RELEASE</version>
-    </dependency>
-    <dependency>
-    	<artifactId>nextag-merchant-import</artifactId>
-		<groupId>com.nextag.import</groupId>
-		<version>0.0.1</version>
-		<exclusions>
-			<exclusion>
-				<groupId>*</groupId>
-    			<artifactId>*</artifactId>
-			</exclusion>
-		</exclusions>
-		<scope>compile</scope>
     </dependency>
   </dependencies>
   
@@ -95,7 +84,7 @@
 	        <executions>
 	          <execution>
 	            <id>attach-sources</id>
-	            <phase>verify</phase>
+	            <phase>package</phase>
 	            <goals>
 	              <goal>jar-no-fork</goal>
 	            </goals>
@@ -111,35 +100,4 @@
             </extension>
         </extensions>         	
   </build>
-  <repositories>		
-		<repository>
-			<id>nextag</id>
-			<url>http://crepo.corp.nextag.com/repo/components2</url>
-		</repository>
-	</repositories>
-	<scm>                 
-		<connection>scm:git:git://git.corp.nextag.com/services/quartz-manager.git</connection>
-        <developerConnection>scm:git:ssh://kato@gerrit.corp.nextag.com:29418/services/quartz-manager.git</developerConnection>
-        <url>http://git@git.corp.nextag.com/services/quartz-manager.git</url>
-	</scm>
-	<profiles>
-        <!-- For Jenkin Builds, "mvn clean verify -Denv=jenkins" will be used to
-                 activate a profile with certain property overrides from the default. -->
-         <profile>
-               <id>env-jenkins</id>
-               <activation>
-                        <property>
-                                <name>env</name>
-                                <value>jenkins</value>
-                        </property>
-                </activation>
-     
-                <distributionManagement>
-                        <repository>
-                                <id>crepodata.corp.nextag.com</id>
-                                <url>scp://crepodata.corp.nextag.com/data2/repo/components2</url>
-                        </repository>
-                </distributionManagement>
-        </profile>
- 	</profiles>
 </project>

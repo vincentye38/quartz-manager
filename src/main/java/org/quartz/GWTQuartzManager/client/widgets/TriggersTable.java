@@ -1,6 +1,11 @@
-package com.nextag.quartz.client.widgets;
+package org.quartz.GWTQuartzManager.client.widgets;
 
 import java.util.Date;
+
+import org.quartz.GWTQuartzManager.client.events.EditTriggerEvent;
+import org.quartz.GWTQuartzManager.client.events.ToggleTriggerStateEvent;
+import org.quartz.GWTQuartzManager.share.GWTTrigger;
+import org.quartz.GWTQuartzManager.share.GWTTrigger.TriggerState;
 
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.DateCell;
@@ -18,10 +23,6 @@ import com.google.gwt.user.cellview.client.SimplePager;
 import com.google.gwt.user.cellview.client.DataGrid;
 import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.view.client.ListDataProvider;
-import com.nextag.quartz.client.events.EditTriggerEvent;
-import com.nextag.quartz.client.events.ToggleTriggerStateEvent;
-import com.nextag.quartz.share.GWTTrigger;
-import com.nextag.quartz.share.GWTTrigger.TriggerState;
 
 public class TriggersTable extends Composite {
 

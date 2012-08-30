@@ -1,4 +1,7 @@
-package com.nextag.quartz.client;
+package org.quartz.GWTQuartzManager.client;
+
+import org.quartz.GWTQuartzManager.client.editors.GWTJobDetailEditor;
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
@@ -9,8 +12,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.nextag.quartz.client.editors.GWTJobDetailEditor;
-import com.nextag.quartz.share.GWTJobDetail;
 
 public class EditJobDetailWorkflow {
 

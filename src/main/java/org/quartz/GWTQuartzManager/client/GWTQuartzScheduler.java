@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.nextag.quartz.client;
+package org.quartz.GWTQuartzManager.client;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -20,14 +20,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
+import org.quartz.GWTQuartzManager.share.GWTKey;
+import org.quartz.GWTQuartzManager.share.GWTSchedulerException;
+import org.quartz.GWTQuartzManager.share.GWTTrigger;
+
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
-import com.nextag.quartz.share.GWTCronTrigger;
-import com.nextag.quartz.share.GWTJobDetail;
-import com.nextag.quartz.share.GWTKey;
-import com.nextag.quartz.share.GWTSchedulerException;
-import com.nextag.quartz.share.GWTTrigger;
 
 @RemoteServiceRelativePath("springGwtServices/GWTQuartzScheduler")
 public interface GWTQuartzScheduler extends RemoteService {

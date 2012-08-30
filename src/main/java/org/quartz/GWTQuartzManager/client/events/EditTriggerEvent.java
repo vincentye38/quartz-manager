@@ -1,8 +1,9 @@
-package com.nextag.quartz.client.events;
+package org.quartz.GWTQuartzManager.client.events;
+
+import org.quartz.GWTQuartzManager.share.GWTTrigger;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
-import com.nextag.quartz.share.GWTTrigger;
 
 public class EditTriggerEvent extends GwtEvent<EditTriggerEvent.Handler> {
 	public static final Type<Handler> TYPE = new Type<Handler>();

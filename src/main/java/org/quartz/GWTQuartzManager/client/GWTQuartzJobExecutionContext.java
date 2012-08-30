@@ -1,9 +1,10 @@
-package com.nextag.quartz.client;
+package org.quartz.GWTQuartzManager.client;
 
 import java.io.Serializable;
 import java.util.Date;
 
-import com.nextag.quartz.share.GWTKey;
+import org.quartz.GWTQuartzManager.share.GWTKey;
+
 
 
 

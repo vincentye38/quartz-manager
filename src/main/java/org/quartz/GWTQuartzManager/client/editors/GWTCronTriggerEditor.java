@@ -1,4 +1,7 @@
-package com.nextag.quartz.client.editors;
+package org.quartz.GWTQuartzManager.client.editors;
+
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
+import org.quartz.GWTQuartzManager.share.Pair;
 
 import com.google.gwt.editor.client.Editor;
 import com.google.gwt.editor.client.adapters.HasDataEditor;
@@ -21,8 +24,6 @@ import com.google.gwt.user.client.ui.ValueBox;
 import com.google.gwt.user.client.ui.ValueBoxBase;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.datepicker.client.DateBox;
-import com.nextag.quartz.share.GWTCronTrigger;
-import com.nextag.quartz.share.Pair;
 import com.google.gwt.user.cellview.client.CellTable;
 import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.cellview.client.Column;

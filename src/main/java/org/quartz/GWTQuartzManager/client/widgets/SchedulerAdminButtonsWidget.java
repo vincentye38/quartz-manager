@@ -1,4 +1,9 @@
-package com.nextag.quartz.client.widgets;
+package org.quartz.GWTQuartzManager.client.widgets;
+
+import org.quartz.GWTQuartzManager.client.GWTQuartzScheduler;
+import org.quartz.GWTQuartzManager.client.GWTQuartzSchedulerAsync;
+import org.quartz.GWTQuartzManager.client.GWTQuartzScheduler.nopAsynCallback;
+import org.quartz.GWTQuartzManager.share.GWTSchedulerException;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -14,10 +19,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.PushButton;
 import com.google.gwt.user.client.ui.ToggleButton;
-import com.nextag.quartz.client.GWTQuartzScheduler;
-import com.nextag.quartz.client.GWTQuartzScheduler.nopAsynCallback;
-import com.nextag.quartz.client.GWTQuartzSchedulerAsync;
-import com.nextag.quartz.share.GWTSchedulerException;
 
 public class SchedulerAdminButtonsWidget extends Composite {
 

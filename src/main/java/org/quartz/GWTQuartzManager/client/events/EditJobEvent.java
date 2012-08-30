@@ -1,8 +1,9 @@
-package com.nextag.quartz.client.events;
+package org.quartz.GWTQuartzManager.client.events;
+
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
-import com.nextag.quartz.share.GWTJobDetail;
 
 public class EditJobEvent extends GwtEvent<EditJobEvent.Handler>{
 	public final static Type<Handler> TYPE = new Type<EditJobEvent.Handler>();

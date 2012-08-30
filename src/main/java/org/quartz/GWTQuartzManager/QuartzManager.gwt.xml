@@ -3,5 +3,5 @@
 	<inherits name="com.google.gwt.user.User"/>
 	<source path="share"/>
 	<source path="client"/>
-	<entry-point class="com.nextag.quartz.client.QuartzManager"/>
+	<entry-point class="org.quartz.GWTQuartzManager.client.QuartzManager"/>
 </module>

@@ -1,7 +1,17 @@
-package com.nextag.quartz.client.widgets;
+package org.quartz.GWTQuartzManager.client.widgets;
 
 import java.util.ArrayList;
 import java.util.Date;
+
+import org.quartz.GWTQuartzManager.client.EditJobDetailWorkflow;
+import org.quartz.GWTQuartzManager.client.events.DeleteJobEvent;
+import org.quartz.GWTQuartzManager.client.events.EditJobEvent;
+import org.quartz.GWTQuartzManager.client.events.EditTriggerEvent;
+import org.quartz.GWTQuartzManager.client.events.TriggerJobEvent;
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
+import org.quartz.GWTQuartzManager.share.GWTKey;
+import org.quartz.GWTQuartzManager.share.Pair;
 
 import com.google.gwt.cell.client.ButtonCell;
 import com.google.gwt.cell.client.FieldUpdater;
@@ -16,15 +26,6 @@ import com.google.gwt.user.cellview.client.TextColumn;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.view.client.ListDataProvider;
-import com.nextag.quartz.client.EditJobDetailWorkflow;
-import com.nextag.quartz.client.events.DeleteJobEvent;
-import com.nextag.quartz.client.events.EditJobEvent;
-import com.nextag.quartz.client.events.EditTriggerEvent;
-import com.nextag.quartz.client.events.TriggerJobEvent;
-import com.nextag.quartz.share.GWTCronTrigger;
-import com.nextag.quartz.share.GWTJobDetail;
-import com.nextag.quartz.share.GWTKey;
-import com.nextag.quartz.share.Pair;
 
 public class JobsTable extends Composite {
 

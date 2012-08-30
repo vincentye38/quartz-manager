@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.nextag.quartz.server;
+package org.quartz.GWTQuartzManager.server;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,6 +31,14 @@ import org.quartz.JobKey;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
 import org.quartz.Trigger;
+import org.quartz.GWTQuartzManager.client.GWTQuartzJobExecutionContext;
+import org.quartz.GWTQuartzManager.client.GWTQuartzScheduler;
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
+import org.quartz.GWTQuartzManager.share.GWTKey;
+import org.quartz.GWTQuartzManager.share.GWTSchedulerException;
+import org.quartz.GWTQuartzManager.share.GWTTrigger;
+import org.quartz.GWTQuartzManager.share.Pair;
 import org.quartz.Trigger.TriggerState;
 import org.quartz.TriggerKey;
 import org.quartz.impl.matchers.GroupMatcher;
@@ -39,14 +47,6 @@ import org.quartz.spi.MutableTrigger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
-import com.nextag.quartz.client.GWTQuartzJobExecutionContext;
-import com.nextag.quartz.client.GWTQuartzScheduler;
-import com.nextag.quartz.share.GWTCronTrigger;
-import com.nextag.quartz.share.GWTJobDetail;
-import com.nextag.quartz.share.GWTKey;
-import com.nextag.quartz.share.GWTSchedulerException;
-import com.nextag.quartz.share.GWTTrigger;
-import com.nextag.quartz.share.Pair;
 
 @Service("GWTQuartzScheduler")
 public class GWTQuartzSchedulerImpl implements GWTQuartzScheduler {

@@ -1,6 +1,9 @@
-package com.nextag.quartz.client;
+package org.quartz.GWTQuartzManager.client;
 
 import java.util.Date;
+
+import org.quartz.GWTQuartzManager.client.editors.GWTCronTriggerEditor;
+import org.quartz.GWTQuartzManager.share.GWTCronTrigger;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.editor.client.SimpleBeanEditorDriver;
@@ -11,8 +14,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.nextag.quartz.client.editors.GWTCronTriggerEditor;
-import com.nextag.quartz.share.GWTCronTrigger;
 
 public class EditCronTriggerWorkflow {
 	interface Binder extends UiBinder<DialogBox, EditCronTriggerWorkflow> {

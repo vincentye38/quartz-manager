@@ -1,4 +1,4 @@
-package com.nextag.quartz.share;
+package org.quartz.GWTQuartzManager.share;
 
 import javax.validation.constraints.NotNull;
 

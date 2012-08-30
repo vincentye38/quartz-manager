@@ -1,8 +1,9 @@
-package com.nextag.quartz.client.events;
+package org.quartz.GWTQuartzManager.client.events;
+
+import org.quartz.GWTQuartzManager.share.GWTJobDetail;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
-import com.nextag.quartz.share.GWTJobDetail;
 
 public class DeleteJobEvent extends GwtEvent<DeleteJobEvent.Handler>{
 	public final static Type<Handler> TYPE = new Type<DeleteJobEvent.Handler>();
